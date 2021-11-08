@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: linear-gradient(to top, #9ca5c0 20%, #009999 100%);
+            }
+
+            header {
+                /* background: rgba(190, 220, 235, 0.925); */
+                min-height: 100px;
+                margin-bottom: -194px;
+
+
+
+
+            }
+
+            nav ul {
+
+                display: flex;
+                margin: 0 420px;
+
+            }
+
+            nav li {
+                list-style: none;
+                margin-right: 5px;
+
+
+
+            }
+
+            nav li a {
+                text-decoration: none;
+                font-size: 22px;
+                color: rgb(0, 0, 0);
+                padding: 10px 20px;
+                transition: 0.5s;
+                line-height: 90px;
+
+
+            }
+
+            nav li a:hover {
+
+                background: #0000003d;
+                color: #ffff;
+            }
+
+
+            .div-cls {
+                text-align: center;
+                margin:250px 0 0 0;
+            }
+
+            button {
+                padding: 10px 30px;
+                background: rgb(245, 161, 82);
+                border: none;
+                border-radius: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+            }
+
+            .div-cls1,
+            h1 {
+                margin: 20px;
+            }
+
+            .div-cls1,
+            p {
+                margin: 20px;
+            }
+
+            .div-cls1,
+            button {
+                margin: 20px;
+            }
+
+
+
+            form {
+                width: 700px;
+                height: 600px;
+                margin: 60px auto;
+                background: rgb(173, 213, 236);
+                padding: 40px 30px 100px 30px;
+                color: black;
+                font-size: 20px
+            }
+
+            .label {
+                margin-bottom: 25px;
+                border: 2px solid rgb(245, 161, 82);
+                border-radius: 10px;
+            }
+
+            .label:focus {
+                background: rgb(245, 184, 134);
+                color: rgb(0, 0, 0);
+            }
+
+            input {
+                padding: 8px 0;
+                margin: 5px 0;
+            }
+
+            fieldset {
+                margin-bottom: 20px;
+                border-color: rgb(245, 161, 82);
+                font-size: 17px;
+                padding: 15px 10px;
+
+            }
+
+            #drinks {
+                width: 300px;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 2px solid rgb(245, 161, 82);
+                border-radius: 10px;
+            }
+
+            button {
+                padding: 10px 30px;
+                margin-right: 4px;
+                background: rgb(245, 161, 82);
+                border: none;
+                border-radius: 10px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            hr {
+                margin-bottom: 80px;
+                background: rgb(245, 184, 134);
+                border: 0.5px solid rgb(245, 184, 134);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="nav.html">Home</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="semantic.html">Sementic</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="div-cls">
+            <h1>This is Form</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed numquam temporibus eum tempore soluta magni
+                est
+                distinctio praesentium? Aliquid nam necessitatibus harum qui eius minus velit soluta repellendus
+                aspernatur
+                fugit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, libero. Accusantium voluptas
+                voluptates ducimus animi aperiam debitis fuga laboriosam, esse id rem, dolorum quas illo quaerat tenetur
+                delectus consectetur ipsum?</p>
+            <button><a href="#">Read More</a></button>
+        </div>
+
+        <form action="">
+            <h1>This is My Hotel</h1>
+            <hr>
+            <label for="name">Name:
+                <input type="text" placeholder="Enter your Name" class="label" name="name" id="name">
+            </label>
+            <label for="emal">Email:
+                <input type="text" placeholder="Enter your Email" class="label" name="email" id="email">
+            </label>
+            <fieldset>
+                <legend>Select your pitha</legend>
+                <label for="vapa">
+                    <input type="radio" name="pitha" id="vapa">Vapa pitha
+                </label><br>
+                <label for="chitoy">
+                    <input type="radio" name="pitha" id="chitoy">Chitoy pitha
+                </label><br>
+                <label for="narkel-pitha">
+                    <input type="radio" name="pitha" id="narkel-pitha">Narkel pitha
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select your Vorta</legend>
+                <label for="shutkir-vorta">
+                    <input type="checkbox" name="Vorta" id="shutkir-vorta">Shutkir Vorta
+                </label><br>
+                <label for="sorisa">
+                    <input type="checkbox" name="Vorta" id="sorisa">Sorisa Vorta
+                </label><br>
+                <label for="begun-vorta">
+                    <input type="checkbox" name="Vorta" id="begun-vorta">Begun Vorta
+                </label>
+            </fieldset>
+
+            <select name="cold" id="drinks">
+                <option value="">---please chose your drinks</option>
+                <option value="7up">7UP</option>
+                <option value="Coca">Coca Cola</option>
+                <option value="mojo">Mojo</option>
+                <option value="sorbot">Sorbot</option>
+                <option value="pepsi">Pepsi</option>
+            </select><br>
+
+            <button type="submit">submit</button>
+            <button type="reset">Reset</button>
+
+
+
+        </form>
+
+    </body>
+
+</html>
